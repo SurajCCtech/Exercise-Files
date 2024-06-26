@@ -1,5 +1,6 @@
 // lambda-hello.cpp by Bill Weinman [bw.org]
 // updated 2022-09-09
+#include <iostream>
 #include <format>
 
 // format-style print()
@@ -8,6 +9,6 @@ constexpr void print(const std::string_view str_fmt, auto&&... args) {
 }
 
 int main() {
-    auto x = []{ print("Hello, earthlings\n"); };
-    x();
+    auto x = [](auto p){ return p; };
+    std::cout << x("Hello, earthlings!!");
 }

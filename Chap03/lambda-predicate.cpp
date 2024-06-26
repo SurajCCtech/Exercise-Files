@@ -18,19 +18,19 @@ void disp_v(const auto& v) {
 }
 
 int main() {
-    std::vector<int> v1{ 1, 7, 4, 9, 4, 8, 12, 10, 20 };
+    // std::vector<int> v1{ 1, 7, 4, 9, 4, 8, 12, 10, 20 };
 
-    // is_div4 predicate
-    auto is_div4 = [](int i) { return i % 4 == 0; };
+    // // is_div4 predicate
+    // auto is_div4 = [](int i) { return i % 4 == 0; };
 
-    // count numbers div by 4
-    auto count = std::count_if(v1.begin(), v1.end(), is_div4);
-    print("count is {}\n", count);
+    // // count numbers div by 4
+    // auto count = std::count_if(v1.begin(), v1.end(), is_div4);
+    // print("count is {}\n", count);
     
-    // copy numbers div by 4s
-    std::vector<int> v2{};
-    std::copy_if(v1.begin(), v1.end(), std::back_inserter(v2), is_div4);
-    disp_v(v2);
+    // // copy numbers div by 4s
+    // std::vector<int> v2{};
+    // std::copy_if(v1.begin(), v1.end(), std::back_inserter(v2), is_div4);
+    // disp_v(v2);
 
     // char_upper operator
     auto char_upper = [](char c) ->char {
